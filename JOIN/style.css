@@ -1,0 +1,214 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0%;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Asigură că imaginea nu va fi tăiată */
+}
+.background img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 90%;
+}
+
+.square svg {
+    z-index: 1;
+    position: absolute;
+    top: calc((100vh - 500px) / 2);
+    left: calc((100vw - 500px) / 2);
+    color: #8CC4D9;
+    stroke: black;
+}
+
+.square h2 {
+    position: absolute;
+    top: calc((100vh - 100px) / 2 - 140px); /* Ajustează în funcție de dimensiunea textului */
+    left: calc((100vw - 200px) / 2 - 75px); /* Ajustează în funcție de dimensiunea containerului */
+    color: white; 
+    font-size: 16px;
+}
+
+.square h3 {
+    position: absolute;
+    top: calc((100vh - 100px) / 2 - 120px); /* Ajustează în funcție de dimensiunea textului */
+    left: calc((100vw - 200px) / 2 - 75px); /* Ajustează în funcție de dimensiunea containerului */
+    color: #ECF5F9; 
+    font-size: 13px;
+    opacity: 90%;
+    font-weight: 400; 
+}
+
+.square h5 {
+    position: absolute;
+    top: calc((100vh - 100px) / 2 - 70px); /* Ajustează în funcție de dimensiunea textului */
+    left: calc((100vw - 200px) / 2 - 50px); /* Ajustează în funcție de dimensiunea containerului */
+    color: #ECF5F9; 
+    font-size: 10px;
+    opacity: 90%;
+    font-weight: 400; 
+}
+
+.mail-icon {
+    position: absolute;
+    top: calc(50% + 5em); /* jumătate din înălțimea iconului */
+    left: calc(50% + 0.5em); /* jumătate din lățimea iconului */
+    width: 1em; /* lățimea iconului */
+    height: 1em; /* înălțimea iconului */
+    transform: translate(-50%, -50%);
+    padding-top: 350px;
+    padding-left: 160px;
+
+}
+
+.first-line {
+    padding-top: 185px;
+    padding-left: 73px;
+}
+
+.mail-example {
+    position: absolute;
+    color: #FFFFFF; 
+    font-size: 8px;
+    opacity: 70%;
+    font-weight: 400; 
+    padding-top: 25px;
+}
+
+.check-icon {
+    position: absolute;
+    top: calc(50% + 5em); /* jumătate din înălțimea iconului */
+    left: calc(50% + 0.5em); /* jumătate din lățimea iconului */
+    width: 1em; /* lățimea iconului */
+    height: 1em; /* înălțimea iconului */
+    transform: translate(-50%, -50%);
+    padding-top: 350px;
+    padding-left: 830px;
+}
+
+.lock-icon {
+    position: absolute;
+    top: calc(50% + 5em); /* jumătate din înălțimea iconului */
+    left: calc(50% + 0.5em); /* jumătate din lățimea iconului */
+    width: 1em; /* lățimea iconului */
+    height: 1em; /* înălțimea iconului */
+    transform: translate(-50%, -50%);
+    padding-top: 450px;
+    padding-left: 160px;
+}
+
+.second-line {
+    padding-top: 235px;
+    padding-left: 73px;
+}
+
+.password-example {
+    position: absolute;
+    color: #FFFFFF; 
+    font-size: 8px;
+    opacity: 70%;
+    font-weight: 400; 
+    padding-top: 75px;
+}
+
+.see-password {
+    position: absolute;
+    top: calc(50% + 5em); /* jumătate din înălțimea iconului */
+    left: calc(50% + 0.5em); /* jumătate din lățimea iconului */
+    width: 1em; /* lățimea iconului */
+    height: 1em; /* înălțimea iconului */
+    transform: translate(-50%, -50%);
+    padding-top: 450px;
+    padding-left: 830px;
+}
+
+.keep-icon {
+    padding-top:250px;
+    padding-left: 72px;
+}
+
+.keep-text {
+    position: absolute;
+    color: #FFFFFF; 
+    font-size: 8px;
+    opacity: 70%;
+    font-weight: 400; 
+    padding-top: 105px;
+}
+
+.first-button {
+    padding-top: 245px;
+    padding-left: 345px;
+    position: absolute;
+    color: white;
+    
+}
+
+.first-button:hover {
+    stroke: black;
+}
+
+.log-button {
+    position: absolute;
+    top: 65%; 
+    transform: translate(-50%, -50%);
+    margin-top: -72px; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    background-color: #6A7EC1; 
+    color: white;
+    border: none; 
+    cursor: pointer; 
+    font-size: 10px; 
+    font-family: "Alfa Slab One", serif; 
+    margin-left: 780px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 95px;
+    height: auto;
+}
+
+.log-button:hover {
+    transform: scale(1.2);
+}
+
+.second-button {
+    padding-top: 320px;
+    padding-left: 70px;
+   
+}
+
+.third-button {
+    padding-top: 320px;
+    padding-left: 310px;
+    
+}
+
+.facebook-icon {
+    padding-top: 327px;
+    padding-left: 315px;
+    z-index: 1;
+}
+
+.gmail-icon {
+    padding-top: 327px;
+    padding-left: 75px;
+}
+
+.forget-password {
+    padding-top: 400px;
+    padding-left: 200px;
+    color: #ECF5F9;
+    
+}
+
+.first-button:hover {
+   
+    background: black;
+}

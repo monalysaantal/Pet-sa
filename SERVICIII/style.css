@@ -1,0 +1,346 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%; /* Asigură că div-ul ocupă întreaga lățime */
+    height: 100vh; /* Înălțimea div-ului să fie echivalentă cu înălțimea ecranului */
+    display: flex;
+    justify-content: center; /* Centrare orizontală */
+    align-items: flex-end; /* Aliniere la partea de jos a div-ului */
+    padding-top: 100px;
+}
+
+.hero-section img {
+    width: 70%; /* Imaginea ocupă întreaga lățime a div-ului */
+    height: auto; /* Înălțimea se ajustează automat proporțional cu lățimea */
+    position: absolute;
+    bottom: 0; /* Imaginea se va poziționa în partea de jos a div-ului */
+    z-index: -1; /* Asigură că imaginea de fundal este plasată în spatele celorlalte elemente */
+    top: 200px;
+    
+}
+
+.navigation {
+    position: absolute;
+    top: 0%;
+    bottom: 70px;
+    left: 50%; /* Va fi poziționat pe mijlocul secțiunii */
+    transform: translateX(-50%); /* Va fi centrat orizontal */
+    z-index: 1; /* Asigură că logo-ul este afișat deasupra imaginii */
+}
+
+.left-side, .right-side {
+    display: flex;
+    align-items: center;
+    top: 100px;
+}
+
+.left-side {
+    position: absolute;
+    top: 150px; /* Ajustează această valoare pentru a poziționa mai jos */
+    left: 280px;
+
+}
+
+.right-side {
+    position: absolute;
+    top: 150px; /* Ajustează această valoare pentru a poziționa mai jos */
+    right: 280px; /* Ajustează această valoare pentru a poziționa mai la dreapta */
+    transition: transform 0.3s ease;
+
+    
+}
+
+.right-side h4, .left-side h4 {
+    font-family: "Alike Angular", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left-side h4 {
+    color: #626B6D;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.service-section {
+        display: flex;
+        flex-direction: column; /* Așează elementele unul sub altul */
+        align-items: center; /* Aliniază elementele în centru pe axa orizontală */
+        justify-content: center; /* Aliniază elementele în centru pe axa verticală */
+        margin-top: 20px; /* Poziționează .servicii sub hero-section */
+        padding: 20px; /* Adaugă spațiu între elementele .servicii */
+        position: relative;
+    }
+
+    .service-section svg {
+        margin-top: 130px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .service-section svg:hover {
+        transform: scale(1.2);
+    }
+
+    .first-image-container {
+        margin-bottom: 20px;
+    }
+    
+    .first-image-container img {
+        width: 40%;
+        height: auto;
+    }
+    
+    .image-grid-first-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-left: 190px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .second-image-container img {
+        width: 40%;
+        height: auto;
+    }
+
+    .third-image-container img {
+        width: 40%;
+        height: auto;
+       
+    }
+    
+    .first-image-container,
+.second-image-container,
+.third-image-container {
+    width: calc(30% - 10px); /* Calculează lățimea fiecărui container de imagine */
+    margin-bottom: 20px; /* Adaugă margin-bottom pentru spațiul între imagini */
+}
+
+.rectangle {
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    width: 100%;
+    margin-left: -96px;
+
+    z-index: -1;
+}
+
+
+
+
+.third-image-container h2 {
+    margin-left: 30px;
+}
+
+
+
+.image-grid-second-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 190px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.cardiologie {
+    margin-top: 10px;
+}
+
+
+.cardiologie-text {
+    margin-left: 30px;
+}
+
+.image-grid-third-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 190px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.eyes-image, .white-dog {
+    margin-top: 10px;
+}
+
+h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    bottom: 12px;
+    font-family: "Alike Angular", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.first-image-container h2 {
+    margin-left: -1px;
+}
+
+.first-image-container .consult-text {
+    margin-left: 30px;
+}
+
+.first-image-container .consult-text:hover {
+    font-weight: bolder;
+}
+
+.first-image-container .vaccin-text {
+    margin-left: 35px;
+}
+
+.first-image-container .vaccin-text:hover {
+    font-weight: bolder;
+}
+
+.second-image-container .deparazitare-text {
+    margin-left: -23px;
+}
+
+.second-image-container .deparazitare-text:hover {
+    font-weight: bolder;
+}
+
+.third-image-container .implant-text {
+    margin-left: 14px;
+}
+
+.third-image-container .implant-text:hover {
+    font-weight: bolder;
+}
+
+.third-image-container .sterilizare-text {
+    margin-right: -18px;
+}
+
+.third-image-container .sterilizare-text:hover {
+    font-weight: bolder;
+}
+
+.image-grid-last-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 190px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.first-image-container .surgery-text {
+    margin-left: 35px;
+}
+
+.first-image-container .surgery-text:hover {
+    font-weight: bolder;
+}
+
+.second-image-container .lab-text {
+    margin-left: 7px;
+}
+
+.second-image-container .lab-text:hover {
+    font-weight: bolder;
+}
+
+.rectangle-section {
+    position: absolute;
+    bottom: 39px;
+    width: 100%;
+    margin-left: -488px;
+    z-index: -1;
+}
+
+footer {
+    margin-top: 95px;
+   overflow: hidden;
+}
+
+footer h2:first-of-type {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265E73;
+    margin-left: 75px;
+}
+
+footer h2:nth-of-type(2) {
+    text-align: center;
+    font-family: "Alike Angular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 90px;
+    
+}
+
+.social-icons {
+    text-align: center;
+    
+    
+}
+
+.social-icons svg {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.social-icons svg:hover {
+    transform: scale(1.2);
+}
+
+
+.copyright-section {
+    text-align: center;
+    bottom: 0; /* Plasează la partea de jos a footer-ului */
+    margin-top: 200px;
+    
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.left-side:hover {
+    transform: scale(1.2);
+
+color: white;
+}
+
+
+
+.right-side:hover {
+    transform: scale(1.2);
+
+    color: black;
+}
+
+.third-image-container .cosmetic:hover {
+    font-weight: bolder;
+}
+
+.second-image-container .stomatologie:hover {
+    font-weight: bolder;
+}
+
+.second-image-container .cardiologie-text:hover {
+    font-weight: bolder;
+}
+
+.first-image-container .oftalmologie:hover {
+    font-weight: bolder;
+}

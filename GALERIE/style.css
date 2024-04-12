@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+}
+
+.hero-section img {
+    width: 1300px;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.navigation {
+    position: absolute;
+    top: 0%;
+    bottom: 70px;
+    left: 50%; /* Va fi poziționat pe mijlocul secțiunii */
+    transform: translateX(-50%); /* Va fi centrat orizontal */
+    z-index: 1; /* Asigură că logo-ul este afișat deasupra imaginii */
+}
+
+.hero-text {
+    margin-top: -580px;
+    margin-bottom: 500px;
+    margin-left: 100px;
+}
+
+.between-section {
+    margin-top: 100px;
+    margin-left: 540px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.between-section:hover {
+    transform: scale(1.2);
+}
+
+.carousel-section {
+    margin-top: 70px;
+}
+
+.left-arrow {
+    margin-left: 30px;
+    margin-top: -15px;
+    transition: transform 0.3s ease;
+}
+
+.right-arrow {
+    margin-left: 1120px;
+    margin-top: -15px;
+    transition: transform 0.3s ease;
+}
+
+.right-arrow:hover {
+    transform: scale(1.2);
+}
+
+.left-arrow:hover {
+    transform: scale(1.2);
+}
+
+
+.adoption-section {
+    margin-top: 90px;
+    margin-left: 640px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.adoption-section:hover {
+    transform: scale(1.2);
+}
+
+.front-image {
+    margin-top: -620px;
+    margin-left: 400px;
+    transition: transform 0.3s ease;
+}
+
+.front-image:hover {
+    transform: scale(1.2);
+}
+
+
+.info-section {
+    margin-top: 50px;
+    margin-left: 390px;
+}
+
+footer {
+    margin-top: 95px;
+   overflow: hidden;
+}
+
+.first-row{
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265E73;
+    margin-left: 510px;
+}
+
+.second-row {
+    text-align: center;
+    font-family: "Alike Angular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 90px;
+    color: #265E73;
+    margin-left: 580px;
+}
+
+.social-icons {
+    text-align: center;
+    
+    
+}
+
+.social-icons svg {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.social-icons svg:hover {
+    transform: scale(1.2);
+}
+
+
+.copyright-section {
+    text-align: center;
+    bottom: 0; /* Plasează la partea de jos a footer-ului */
+    margin-top: 200px;
+    
+}
+
+h3 {
+    font-weight: bold;
+}
