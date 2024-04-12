@@ -1,0 +1,487 @@
+body {
+    width: 100%;
+    height: 500vh;
+    display: flexbox;
+}
+
+/* Hero-section */
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section img {
+    width: 50%;
+    height: auto;
+}
+
+.hero-section svg {
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    width: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.left-nav a, .right-nav a {
+    margin-right: 20px; 
+    color: #D9EBF2;
+    text-decoration: none;
+    z-index: 4;
+}
+
+.left-nav {
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+
+.right-nav {
+    margin-right: 320px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ECF5F9; 
+    font-size: 16px; 
+    line-height: 0.6;
+}
+
+.slogan span {
+    display: block; 
+}
+
+.join-button {
+    position: absolute;
+    top: 65%; 
+    transform: translate(-50%, -50%);
+    margin-top: 20px; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    background-color: #B2D8E5; 
+    color: black;
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-family: "Adamina", serif; 
+    margin-left: 650px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.join-button:hover {
+    transform: scale(1.2);
+}
+
+ .search-icon {
+    padding-bottom: 35px;
+    margin-left: 450px;
+    position: absolute; /* Permite poziționarea exactă în cadrul navigation bar-ului */
+    left: 0; /* Așează iconița în stânga complet */
+    top: 50%; /* Centrează-o vertical în navigation bar */
+    padding-left: 20px; /* Adaugă ceva spațiu înaintea iconiței, dacă este necesar */
+    color: #B2D8E5;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.search-icon:hover {
+   
+    color: white;
+    
+}
+
+
+
+
+/* Main-section */
+
+.main-section img {
+    width: 50%;
+    height: auto;
+}
+
+.main-section {
+    position: relative;
+    
+    
+}
+
+.left-content, .right-content {
+    position: absolute;
+    width: 50%; 
+}
+
+.left-content {
+    width: 660px; 
+    height: 500px; 
+    background-color: #D9EBF2;
+}
+
+.right-content {
+    top: 0;
+    right: 0;
+}
+
+.rectangle {
+    width: 660px; 
+    height: 880px; 
+    background-color: #D9EBF2;
+}
+
+.right-content img {
+    width: 660px;
+    height: 881px ;
+}
+
+.rectangle h2 {
+   margin: 0%;
+   position: relative;
+   top: 100px;
+   text-align: center;
+   line-height: 0.5;
+}
+
+
+.rectangle h2 span {
+    display: block; /* Face fiecare bucată de text să fie pe un rând separat */
+    font-size: 18px;
+    color: #265E73;
+    font-family: "Alfa Slab One", serif; 
+    font-weight: bold;
+}
+
+
+.second-line {
+    margin-left: 50%; /* Poziționează textul "din România" în mijlocul primului rând */
+    transform: translateX(-50%); /* Centrează-l exact pe mijloc */
+}
+
+.rectangle h1 {
+    margin: 0%;
+   position: relative;
+   top: 255px;
+   text-align: center;
+   font-size: 16px;
+   color: #265E73;
+   font-family: "Alfa Slab One", serif; 
+   font-weight: bold;
+}
+
+.mission-paragraph {
+    text-align: center;
+    font-size: 18px;
+    color: #265E73;
+    font-family: "Alfa Slab One", serif; 
+    padding-top: 190px;
+}
+
+.chance-paragraph {
+    position: fixed;
+    text-align: center;
+    font-size: 14px;
+    color: #265E73;
+    font-family: "Alfa Slab One", serif;
+    padding-top: 170px;
+}
+
+.chance-section {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #265E73;
+    font-family: "Alfa Slab One", serif;
+    padding-top: 15px;
+}
+
+/* Circle-section */
+
+
+.circle-section svg {
+    margin-top: 830px;
+}
+
+.circle-section {
+    position: relative; /* Adaugă poziționarea relativă */
+    text-align: center; /* Alinierea centrului pentru a plasa cercul în mijloc */
+    padding: 50px 0; /* Spațiere pentru secțiunea cercului */
+}
+
+
+
+.ellipse {
+    position: relative;
+}
+
+.ellipse h1,.ellipse h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.ellipse h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ellipse h2 {
+    font-size: 18px;
+    font-style: italic;
+}
+.about-section {
+    margin-top: 50px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: revealRight 4s ease-out 0.5s forwards;
+}
+
+@keyframes revealRight {
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.about-paragraph {
+    margin-top: 50px;
+} 
+
+.text-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.text-container h1 {
+    font-weight: bold;
+    color: #265E73;
+}
+
+
+.text-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-container h2 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+h2 {
+    margin-top: 15px;
+    
+}
+
+.image-container {
+     position: absolute;
+    bottom: 90px; /* Plasează în partea de jos */
+    left: 50%; /* Centrăm pe axa orizontală */
+    transform: translateX(-50%); /* Centrăm exact pe mijloc */
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 75px; /* Ajustează dimensiunea imaginilor */
+    height: auto;
+    border-radius: 25%;
+    bottom: 0; /* Plasează în partea de jos */
+    margin-left: -15px;
+    position: relative;
+}
+
+.image-container img:hover {
+    width: 100px;
+}
+
+
+
+
+
+.martin-section {
+    display: block;
+z-index: 1;
+margin-top: 10px;
+
+}
+
+.daniela-section {
+    display: block;
+    z-index: 0;
+}
+
+.daniela-section:hover {
+    z-index: 2;
+}
+
+.martin-section p {
+    margin-right: 13px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.phone-number {
+    color: #44ADC5;
+}
+
+.phone-number:hover {
+   color: black;
+}
+
+.location {
+  
+    
+    margin-left: 85px;
+}
+
+.questions {
+    margin-left: 25px;
+}
+
+footer {
+    margin-top: 95px;
+   overflow: hidden;
+}
+
+footer h2:first-of-type {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265E73;
+    margin-left: 75px;
+}
+
+footer h2:nth-of-type(2) {
+    text-align: center;
+    font-family: "Alike Angular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 90px;
+    
+}
+
+.social-icons {
+    text-align: center;
+     
+
+    
+}
+
+.social-icons svg {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.social-icons svg:hover {
+    transform: scale(1.2);
+}
+
+.copyright-section {
+    text-align: center;
+    bottom: 30px; /* Plasează la partea de jos a footer-ului */
+    margin-top: 550px;
+    
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.servicii:hover {
+    color: white;
+    transform: scale(1.2);
+
+}
+
+.servicii {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.home {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.home:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.about {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about:hover {
+    color: white;
+    transform: scale(1.2); 
+}
+
+.contact {
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.contact:hover {
+    color: white;
+    transform: scale(1.2); 
+}
+
+.donate {
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.donate:hover {
+    color: white;
+    transform: scale(1.2); 
+}
+
+.galery {
+    transition: transform 0.3s ease;
+    cursor: pointer;   
+}
+
+.galery:hover {
+    color: white;
+    transform: scale(1.2);
+}

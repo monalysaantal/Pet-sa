@@ -1,0 +1,144 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%; /* Asigură că div-ul ocupă întreaga lățime */
+    height: 100vh; /* Înălțimea div-ului să fie echivalentă cu înălțimea ecranului */
+    display: flex;
+    justify-content: center; /* Centrare orizontală */
+    align-items: flex-end; /* Aliniere la partea de jos a div-ului */
+    padding-top: 100px;
+}
+
+.hero-section img {
+    width: 60%; /* Imaginea ocupă întreaga lățime a div-ului */
+    height: auto; /* Înălțimea se ajustează automat proporțional cu lățimea */
+    position: absolute;
+    bottom: 0; /* Imaginea se va poziționa în partea de jos a div-ului */
+    z-index: -1; /* Asigură că imaginea de fundal este plasată în spatele celorlalte elemente */
+    top: 155px;
+}
+
+.navigation {
+    position: absolute;
+    top: 0%;
+    bottom: 50px;
+    left: 50%; /* Va fi poziționat pe mijlocul secțiunii */
+    transform: translateX(-50%); /* Va fi centrat orizontal */
+    z-index: 1; /* Asigură că logo-ul este afișat deasupra imaginii */
+}
+
+.logo {
+    padding-bottom: 10px;
+}
+
+.main-square {
+    z-index: 1;
+    position: absolute;
+    top: calc((100vh - 500px) / 2);
+    left: calc((100vw - 500px) / 2);
+    color: #8CC4D9;
+    stroke: black;
+    margin-top: 138px;
+    margin-left: -65px;
+}
+
+.first-text {
+    position: absolute;
+    z-index: 2;
+    margin-top: -500px;
+    margin-left: -25px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.first-text:hover {
+    transform: scale(1.2);
+}
+
+.first-rectangle {
+    position: absolute;
+    margin-top: -466px;
+    margin-left: -122px;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.first-rectangle:hover {
+    transform: scale(1.2);
+}
+
+
+
+.first-line {
+    position: absolute;
+    margin-top: -415px;
+    margin-left: -108px;
+    z-index: 3;
+}
+
+.second-rectangle,.last-rectangle {
+    position: absolute;
+    z-index: 3;
+    margin-top: -500px;
+    margin-left: -25px;
+}
+
+.second-rectangle {
+    margin-top: -420px ;
+    margin-left: -124px;
+}
+
+.second-line {
+    position: absolute;
+    z-index: 3;
+    margin-top: -363px ;
+    margin-left: -109px;
+}
+
+.last-rectangle {
+   margin-top: -369px;
+   margin-left: -120px;
+}
+.third-line {
+    position: absolute;
+    z-index: 3;
+    margin-top: -315px;
+    margin-left: -108px;
+}
+
+.last-section {
+    position: absolute;
+    z-index: 3;
+    margin-top: -400px;
+    margin-left: -85px;
+}
+
+footer {
+    margin-top: 95px;
+   overflow: hidden;
+}
+
+footer h2:first-of-type {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265E73;
+    margin-left: 75px;
+}
+
+.copyright-section {
+    text-align: center;
+    bottom: 0; /* Plasează la partea de jos a footer-ului */
+    margin-top: 100px;
+    
+}
+
+h3 {
+    font-weight: bold;
+}

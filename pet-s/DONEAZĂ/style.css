@@ -1,0 +1,269 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%; /* Asigură că div-ul ocupă întreaga lățime */
+    height: 100vh; /* Înălțimea div-ului să fie echivalentă cu înălțimea ecranului */
+    display: flex;
+    justify-content: center; /* Centrare orizontală */
+}
+ 
+.first-text {
+    position: absolute;
+    z-index: 2;
+    margin-top: 160px;
+    margin-left: 27px;
+}
+
+.second-text {
+    position: absolute;
+    z-index: 2;
+    margin-top: 400px;
+    margin-left: 27px;
+}
+
+.button {
+    position: absolute;
+    z-index: 2;
+    margin-top: 615px;
+    margin-left: 480px;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.button-donate:hover {
+    transform: scale(1.2);
+}
+
+.left-image, .right-image {
+    position: absolute;
+    bottom: -205px;
+    width: 350px;
+    margin-left: 10px;
+}
+
+.left-image {
+    left: 20px;
+}
+
+.right-image {
+    right: 20px;
+    margin-right: -18px;
+}
+
+
+.navigation {
+    position: absolute;
+    top: -50px;
+    left: 50%; /* Va fi poziționat pe mijlocul secțiunii */
+    transform: translateX(-50%); /* Va fi centrat orizontal */
+    z-index: 1; /* Asigură că logo-ul este afișat deasupra imaginii */  
+    margin-left: -5px;
+}
+
+
+
+
+.rectangle {
+   margin-left: 30px;
+   margin-top: 100px;
+    margin-right: -130px;
+}
+
+.left-side, .right-side {
+    display: flex;
+    align-items: center;
+    top: 100px;
+}
+
+.left-side {
+    position: absolute;
+    top: 10px; /* Ajustează această valoare pentru a poziționa mai jos */
+    left: 35px;
+    font-size: 14px;
+
+}
+
+.right-side {
+    position: absolute;
+    top: -60px; /* Ajustează această valoare pentru a poziționa mai jos */
+    right: 85px; /* Ajustează această valoare pentru a poziționa mai la dreapta */
+    color: #626B6D;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.phone-icon {
+    padding-right: -35px;
+   padding-top: 54px;
+   left: 25px;
+   
+}
+
+.right-side h4 {
+    margin-top: 78px;
+    margin-left: 5px;
+}
+
+.right-side:hover {
+    transform: scale(1.2);
+}
+
+.between-section {
+    display: flex;
+    flex-direction: column; /* Așează elementele unul sub altul */
+    align-items: center; /* Aliniază elementele în centru pe axa orizontală */
+    justify-content: center; /* Aliniază elementele în centru pe axa verticală */
+    margin-top: 20px; /* Poziționează .servicii sub hero-section */
+    padding: 20px; /* Adaugă spațiu între elementele .servicii */
+    position: relative;
+}
+
+.between-section svg {
+    margin-top: 470px;
+    position: absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.between-section svg:hover {
+    transform: scale(1.2);
+}
+
+
+.help-section {
+    position: relative;
+}
+
+.help-text {
+    position: absolute;
+    margin-left: 480px;
+    top: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.help-text:hover {
+    transform: scale(1.2);
+}
+
+.donate-icon {
+    position: absolute; /* Setează poziția absolută pe icon */
+    top: 690px; /* Ajustează coordonata verticală pentru poziționare deasupra imaginii */
+    left: 180px; /* Ajustează coordonata orizontală pentru poziționare deasupra imaginii */
+    z-index: 3;
+    margin-left: 150px;   
+}
+
+.volunteer-icon {
+    position: absolute; /* Setează poziția absolută pe icon */
+    top: 360px; /* Ajustează coordonata verticală pentru poziționare deasupra imaginii */
+    left: 650px; /* Ajustează coordonata orizontală pentru poziționare deasupra imaginii */
+    z-index: 3;
+    margin-left: 290px; 
+}
+
+
+.help-section img {
+    width: 700px;
+    transform: rotate(-90deg);
+    margin-left: 300px;
+    opacity: 80%;
+    position: absolute;
+    top: 200px;
+}
+
+.button-donate {
+    margin-left: 535px;
+    margin-top: 810px;
+    z-index: 4;
+    position: absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+
+
+.donate-text {
+margin-left: 315px;
+margin-top: 740px;
+position: absolute;
+}
+
+.donate-paragraph {
+    position: absolute;
+    margin-top: 727px;
+    margin-left: 277px;
+}
+
+.volunteer-text {
+    position: absolute;
+    margin-left: 903px;
+    margin-top: 415px;
+}
+
+.volunteer-paragraph {
+    position: absolute;
+    margin-left: 903px;
+    margin-top: 400px;
+}
+
+footer {
+    margin-top: 95px;
+   overflow: hidden;
+}
+
+footer h2:first-of-type {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265E73;
+    margin-left: 75px;
+    margin-top: 950px;
+}
+
+footer h2:nth-of-type(2) {
+    text-align: center;
+    font-family: "Alike Angular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 90px;
+    
+}
+
+.social-icons {
+    text-align: center;
+    
+    
+}
+
+.social-icons svg {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons svg:hover {
+    transform: scale(1.2);
+}
+
+.copyright-section {
+    text-align: center;
+    bottom: 0; /* Plasează la partea de jos a footer-ului */
+    margin-top: 200px;
+    
+}
+
+h3 {
+    font-weight: bold;
+}
